@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyHub - Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">Study<span>Hub</span></div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+    <nav id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Organise your semester<br>in one place</h1>
+    <p>Track assignments, plan study sessions and never miss a deadline again.</p>
+    <a class="btn" href="#features">Get started</a>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature"><div class="icon">&#128197;</div><h3>Deadline planner</h3><p>See every assignment and quiz on one timeline.</p></div>
+    <div class="feature"><div class="icon">&#9201;</div><h3>Focus timer</h3><p>Study in focused 25-minute blocks with short breaks.</p></div>
+    <div class="feature"><div class="icon">&#128202;</div><h3>Progress tracking</h3><p>Watch your completed tasks grow week by week.</p></div>
+  </section>
+
+  <section id="how" class="steps">
+    <h2>How it works</h2>
+    <ol>
+      <li><strong>Add your courses</strong> for the semester.</li>
+      <li><strong>Enter deadlines</strong> as soon as they are announced.</li>
+      <li><strong>Follow your plan</strong> and tick tasks off.</li>
+    </ol>
+  </section>
+
+  <footer id="contact" class="footer">
+    <p>Practice project by Dheya Alhag &middot; <a href="../">All projects</a></p>
+  </footer>
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const links = document.getElementById("navLinks");
+    btn.addEventListener("click", () => links.classList.toggle("open"));
+  </script>
+</body>
+</html>
