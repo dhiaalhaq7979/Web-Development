@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>My Tasks</h1>
+    <form id="taskForm" class="add">
+      <input id="taskInput" type="text" placeholder="What do you need to do?" maxlength="100" autocomplete="off">
+      <button type="submit">Add</button>
+    </form>
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="done">Completed</button>
+    </div>
+    <ul id="taskList"></ul>
+    <div class="footer">
+      <span id="counter">0 tasks left</span>
+      <button id="clearDone">Clear completed</button>
+    </div>
+    <p class="back"><a href="../">&larr; All projects</a></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

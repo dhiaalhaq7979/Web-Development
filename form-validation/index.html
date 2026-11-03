@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="signupForm" class="form" novalidate>
+    <h1>Create account</h1>
+    <div class="field">
+      <label for="name">Full name</label>
+      <input id="name" type="text" placeholder="e.g. Ali Hassan">
+      <small></small>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="you@example.com">
+      <small></small>
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="At least 8 characters">
+      <div class="strength"><span id="strengthBar"></span></div>
+      <small></small>
+    </div>
+    <div class="field">
+      <label for="confirm">Confirm password</label>
+      <input id="confirm" type="password">
+      <small></small>
+    </div>
+    <button type="submit">Sign up</button>
+    <p id="successMsg" class="success" hidden>Account created successfully!</p>
+    <p class="back"><a href="../">&larr; All projects</a></p>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
